@@ -1,4 +1,4 @@
-# RTSPBruter 🔪 💪 
+# RTSPBruter 🔪 
 
 RTSPBruter is python tool used to bruteforce authentification of Real Time Streaming Protocol (RTSP).
 
