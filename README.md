@@ -8,7 +8,7 @@ python3 -u usernames.txt -P passwords.txt -i 127.0.0.1 -p 554
 
 ## Running from Docker 🐳 
 
-docker run -ti -v $(PWD)/data:/data rtspbruter -u data/usernames.txt -P data/passwords.txt -i 127.0.0.1 -p 554
+docker run -ti -v $(PWD)/data:/data rtspbruter -u /data/usernames.txt -P /data/passwords.txt -i 127.0.0.1 -p 554
 
 ## Parameters 🧰 
 
