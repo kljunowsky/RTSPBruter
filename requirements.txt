@@ -1,3 +1,2 @@
-itertools
 base64
 argparse
