@@ -41,11 +41,11 @@ def b64Passwords():
                 data = s.recv(1024)
                 response = data.decode('ascii')
                 passwFDecoded = base64.b64decode(passwF.encode('ascii')).decode('ascii')
-                #print("Found credentials!\n"+"Request:\n"+req+"\n"+"Response: \n"+response+"\n"+"Base64 encoded password: "+passwF+"\nPassword: "+str(passwFDecoded)+"\r\n")
                 if "404 Not Found" in response:
                     None
                 else:
                     print("Found credentials!\n"+"Request:\n"+req+"\n"+"Response: \n"+response+"\n"+"Base64 encoded password: "+passwF+"\nPassword: "+str(passwFDecoded)+"\r\n")
+                s.close()
         request()
 
 b64Passwords()
